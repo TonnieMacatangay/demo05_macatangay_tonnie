@@ -1,33 +1,138 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
+  <head>
     <title>My BCIT Project</title>
-    <meta name="comp1800 template" content="My 1800 App">
+    <meta name="comp1800 template" content="My 1800 App" />
 
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Other libraries go here -->
+  </head>
 
-</head>
-
-<body>
-
+  <body>
     <!------------------------------>
     <!-- Your HTML Layout go here -->
     <!------------------------------>
     <!-- Stuff for body goes here -->
 
+    <!-- Top Navbar -->
+    <nav
+      class="navbar navbar-expand-lg bg-primary"
+      style="--bs-bg-opacity: 0.5"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <!-- Logo from https://media.istockphoto.com/id/1214084790/vector/black-cat-circle-symbol.jpg?s=612x612&w=0&k=20&c=7mafIEvOw7_Nf01hA4pHGzZIexKcI3HTcHqz0OQrt0s= -->
+          <img src="./images/cat_logo_stock.jpg" height="50" />
+          TonnieAPP
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Adopt a Cat</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End of top Navbar -->
+
+    <!-- Hero Section starts -->
+    <div class="p-5 mb-4 bg-primary-subtle rounded-3">
+      <div class="container-fluid py-5">
+        <h1 class="display-5 fw-bold">Welcome to Tonnie's Cat Sanctuary!</h1>
+
+        <p class="col-md-8 fs-4">
+          Please visit these cats looking for their fur-ever home.
+        </p>
+
+        <button class="btn btn-primary btn-lg" type="button">
+          Login to Adopt
+        </button>
+      </div>
+    </div>
+    <!-- Hero Section Ends -->
+
+    <div class="container">
+      <h1 class="text-center mb-4">Favourite Cats</h1>
+
+      <div class="card-group">
+        <div class="card">
+          <!-- From: https://www.reddit.com/r/cats/comments/1wzerlr/the_allegations_are_true/ -->
+          <img src="./images/funny_cat.webp" class="card-img-top" />
+          <div class="card-body">
+            <h5 class="card-title">Mean Cat</h5>
+            <p class="card-text">
+              This cat loves to fight. Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Neque quos alias fugit doloremque voluptatibus
+              tempore dolores quisquam sit sint cupiditate, repellat ut nisi
+              nostrum consequuntur libero repudiandae eius delectus non!
+            </p>
+            <p class="card-text">
+              <small class="text-body-secondary">Last updated 3 mins ago</small>
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./images/funny_cats.webp" class="card-img-top" />
+          <div class="card-body">
+            <!-- From https://www.reddit.com/r/cats/comments/1wz053i/conservation_of_energy/ -->
+            <h5 class="card-title">Twin Oranges</h5>
+            <p class="card-text">
+              These cats love each other. Lorem ipsum, dolor sit amet
+              consectetur adipisicing elit. Necessitatibus, at. Tenetur error
+              porro quas laboriosam, repellat placeat illum nihil doloremque
+              sapiente sequi distinctio, quidem, magnam voluptatibus minima sunt
+              expedita velit.
+            </p>
+            <p class="card-text">
+              <small class="text-body-secondary">Last updated 3 mins ago</small>
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <!-- From https://www.reddit.com/r/cats/comments/1wy916s/my_parents_cat_escaped_and_they_sent_me_this_pic/ -->
+          <img src="./images/uncle_leo.webp" class="card-img-top" />
+          <div class="card-body">
+            <h5 class="card-title">Jumpy Cat</h5>
+            <p class="card-text">
+              This is a cat who does not understand what glass is. Lorem ipsum
+              dolor sit amet consectetur adipisicing elit. Officiis, reiciendis.
+              Sunt ratione aliquid voluptas blanditiis cum autem, incidunt
+              maiores, sit unde dolorum, ad quam eveniet repudiandae nulla harum
+              tenetur! Dolorem?
+            </p>
+            <p class="card-text">
+              <small class="text-body-secondary">Last updated 3 mins ago</small>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!---------------------------------------------->
     <!-- Your own JavaScript functions go here    -->
     <!---------------------------------------------->
 
     <!-- Link to scripts of your own -->
-    <!-- <script type="module" src="./src/main.js"></script> -->
-
-</body>
-
+    <script type="module" src="./src/main.js"></script>
+  </body>
 </html>
